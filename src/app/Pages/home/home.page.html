@@ -9,8 +9,8 @@
 <ion-content>
   <ion-grid>
     <ion-row *ngFor="let item of items">
-      <ion-col (click)="Navigate(item.id)">
-        <ion-item>
+      <ion-col>
+        <ion-item [routerLink]="['/type-document-list']">
           <ion-label>{{ item.name }} </ion-label>
         </ion-item>
       </ion-col>
