@@ -22,8 +22,8 @@ const routes: Routes = [
         ]
       },
       {
-        path: '',
-        redirectTo: '/app/tabs/Menu',
+        path: 'Home',
+        redirectTo: '../home/home.module#HomeModule',
         pathMatch: 'full'
       }
 

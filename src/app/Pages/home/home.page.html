@@ -1,20 +1,17 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Ionic Blank
+      Inicio
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <ion-grid>
-    <ion-row>
-      <ion-col>
-        <ion-item size="6" size-md href="#">
-          <ion-badge slot="end" color="primary"> 1 </ion-badge>
-          <ion-label>
-            Projeto 1
-          </ion-label>
+    <ion-row *ngFor="let item of items">
+      <ion-col (click)="Navigate(item.id)">
+        <ion-item>
+          <ion-label>{{ item.name }} </ion-label>
         </ion-item>
       </ion-col>
     </ion-row>
